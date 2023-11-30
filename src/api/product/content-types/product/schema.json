@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "comaps": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::comap.comap"
+    },
+    "comap": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::comap.comap"
+    },
+    "paints": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::paint.paint"
+    }
+  }
+}
